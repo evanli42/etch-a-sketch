@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(225, 217, 241);
+}
+
+#Title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+#buttonDiv {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  gap: 10px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-gap: 0em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  height: 900px;
+  width: 900px;
+  border: 2px solid aqua;
+}
+
+/* targets the highest parent in DOM */
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+.grid-item {
+  background-color: white;
+}
+
+.Color {
+  background: aqua;
+}
+
